@@ -1,0 +1,25 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions: 	 	
+        java: corretto8
+artifacts:
+  files:
+    -  README.md
+    -  package-lock.json 	
+    -  package.json
+    -  products.html
+    -  store.html
+    -  index.html
+    -  gulpfile.js
+    -  about.html
+    -  LICENSE
+    -  .travis.yml
+    -  .gitignore
+    -  .browserslistrc
+eb_codebuild_settings:
+  CodeBuildServiceRole: AWSCodePipelineServiceRole-us-east-1-dashpipe
+  ComputeType: BUILD_GENERAL1_SMALL
+  Image: aws/codebuild/standard:2.0
+Timeout: 60
