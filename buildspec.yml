@@ -19,7 +19,7 @@ artifacts:
     -  .gitignore
     -  .browserslistrc
 eb_codebuild_settings:
-  CodeBuildServiceRole: AWSCodePipelineServiceRole-us-east-1-dashpipe
+  CodeBuildServiceRole: AWSCodePipelineServiceRole-us-east-1-htmlpipeline
   ComputeType: BUILD_GENERAL1_SMALL
   Image: aws/codebuild/standard:2.0
 Timeout: 60
